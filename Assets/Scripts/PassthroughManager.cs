@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,13 +11,15 @@ public class PassthroughManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        if(OVRInput.GetDown(button, controller))
+        
+        if (OVRInput.GetDown(button, controller))
         {
+            Debug.Log("pinched");
             passthrough.hidden = !passthrough.hidden;
         }
     }
